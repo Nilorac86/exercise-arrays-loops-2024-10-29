@@ -77,7 +77,7 @@ console.log(players.indexOf("Maradona"));
 //15. Kombinera indexOf() och splice() för att ta bort "Ronaldo" från arrayen, 
 //oavsett var i listan han befinner sig.
 
-const players = ["Zlatan", "Beckham", "Zidane", "Ronaldo", "Romario", "Maradona"];
+//const players = ["Zlatan", "Beckham", "Zidane", "Ronaldo", "Romario", "Maradona"];
 /* const removeRonaldo = (players.indexOf("Ronaldo"));
 
 if (removeRonaldo !== -1){
@@ -86,23 +86,59 @@ if (removeRonaldo !== -1){
 
 console.log(players); */
 
-//16. Slice retunerar en del av den befintliga listan som blir en kopia av listan och har samma underliggande värde som listan den skapades ifrån.
+//16. Slice retunerar en del av den befintliga listan som blir en kopia av 
+//listan och har samma underliggande värde som listan den skapades ifrån.
 
 //const partOfPlayers= players.slice(0,3);
 //console.log (partOfPlayers);
 
-//17. Den innehåller nu dessa spelare, ["Zidane", "Ronaldo", "Romario", "Maradona"], eftersom den tar bort 0 och 1.
+//17. Den innehåller nu dessa spelare, ["Zidane", "Ronaldo", "Romario", "Maradona"],
+// eftersom den tar bort 0 och 1.
 // Den ursprungliga listan players är oförändrad.
 
 /* const partOfPlayersEnd = players.slice(2)
 console.log (partOfPlayersEnd); */
 
-//18.
+//18. with tar in två parametrar och visar först orginal arrayn och sedan 
+//levererar den en ny modifierad koipia av den tidigare listan. 
+
+// const players = ["Zlatan", "Beckham", "Zidane", "Ronaldo", "Romario", "Maradona"];
+// const updatedPlayers = players.with(1, "Mbappe");
+
+// console.log(players);
+// console.log(updatedPlayers);
+
+// 19. Utgå från arrayen nedan. Skriv en for-loop som skriver ut varje tal i arrayen.
+
+// const numbers = [5, 8, 12, 20, 3];
+
+// for (let i = 0; i < numbers.length; i++){
+//     console.log(numbers);
+// }
 
 
-// #21. 
 
-//const numbers = [5, 8, 12, 20, 3];
+
+
+// 20. Använd en for-loop för att summera alla tal i arrayen numbers ovan. 
+//Logga ut summan efter att loopen har körts klart.
+
+// const numbers = [5, 8, 12, 20, 3];
+// let sum = 0;
+
+// for (let i = 0; i < numbers.length; i++){
+
+//     sum += numbers[i];
+
+//     console.log(sum);
+// }
+
+
+
+// 21. Skriv en for-loop som letar efter det största talet i numbers. 
+//Logga det största värdet.
+
+// const numbers = [5, 8, 12, 20, 3];
 
 // let biggestNumber = 0;
 
@@ -111,24 +147,68 @@ console.log (partOfPlayersEnd); */
 //         biggestNumber = number;
 // }
 // }
+// console.log (`#21. The biggest number är ${biggestNumber}`);
 
-//console.log (`#21. The biggest number är ${biggestNumber}`);
 
-// # 22.
-const numbers = [5, 8, 12, 20, 3];
+// 22. Skapa en ny array som heter doubledNumbers. 
+//Använd en for-loop för att fylla doubledNumbers med varje tal i numbers 
+//multiplicerat med 2.
 
-const dubbelNumbers = [];
+// const numbers = [5, 8, 12, 20, 3];
 
-for (const n of numbers){
-    dubbelNumbers.puch (n*2);
+// const dubbeldNumbers = [];
+
+// for (const n of numbers){
+//     dubbeldNumbers.push (n*2);
+// }
+//     console.log ("#22.", numbers);
+//     console.log ("#22.", dubbeldNumbers);
+
+
+// 23. Använd en for-loop för att räkna ut medelvärdet av talen i numbers. 
+//Logga ut medelvärdet.
+
+// const numbers = [5, 8, 12, 20, 3];
+
+// let sum = 0;
+
+// for (let i = 0; i < numbers.length; i++){
+//     sum += numbers[i];
+// }
+//     const average = sum/numbers.length;
+//     console.log(average);
+
+
+// 24. Skriv en for-loop som hittar och loggar ut det minsta talet i numbers.
+
+// const numbers = [5, 8, 12, 20, 3];
+
+// let smallestNumber = numbers [0];
+
+// for (let i = 0; i < numbers.length; i++){
+//    if (numbers [i] < smallestNumber){
+//      smallestNumber = numbers[i];
+//    }
+// }
+//     console.log(smallestNumber);
+    
+
+// 25. Skapa en ny array som heter positiveNumbers och fyll den med endast de positiva 
+//talen från arrayen nedan. Använd en for-loop och en if-sats.
+
+const mixedNumbers = [3, -5, 12, -1, 8, -6];
+const evenNumbers = 
+
+for (let i = 0; i < mixedNumbers; i++){
+    if (){
+        
+    }
 }
-console.log ("#22.", numbers);
-console.log ("#22.", dubbelNumbers);
 
-// #29.
-const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+// // #29.
+// const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
 
-for (const word of words) {
-    const numberOfCharacters = word.length;
-    console.log (`#29. word: ${w}. Den har ${numberOfCharacters} ord.`);
-}
+// for (const word of words) {
+//     const numberOfCharacters = word.length;
+//     console.log (`#29. word: ${w}. Den har ${numberOfCharacters} ord.`);
+// }
