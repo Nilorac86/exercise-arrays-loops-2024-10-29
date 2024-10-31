@@ -78,10 +78,57 @@ console.log(players.indexOf("Maradona"));
 //oavsett var i listan han befinner sig.
 
 const players = ["Zlatan", "Beckham", "Zidane", "Ronaldo", "Romario", "Maradona"];
-const removeRonaldo = (players.indexOf("Ronaldo"));
+/* const removeRonaldo = (players.indexOf("Ronaldo"));
 
 if (removeRonaldo !== -1){
     players.splice(removeRonaldo,1);
 }
 
-console.log(players);
+console.log(players); */
+
+//16. Slice retunerar en del av den befintliga listan som blir en kopia av listan och har samma underliggande värde som listan den skapades ifrån.
+
+//const partOfPlayers= players.slice(0,3);
+//console.log (partOfPlayers);
+
+//17. Den innehåller nu dessa spelare, ["Zidane", "Ronaldo", "Romario", "Maradona"], eftersom den tar bort 0 och 1.
+// Den ursprungliga listan players är oförändrad.
+
+/* const partOfPlayersEnd = players.slice(2)
+console.log (partOfPlayersEnd); */
+
+//18.
+
+
+// #21. 
+
+//const numbers = [5, 8, 12, 20, 3];
+
+// let biggestNumber = 0;
+
+// for (const number of numbers) {
+//     if (number > biggestNumber) {
+//         biggestNumber = number;
+// }
+// }
+
+//console.log (`#21. The biggest number är ${biggestNumber}`);
+
+// # 22.
+const numbers = [5, 8, 12, 20, 3];
+
+const dubbelNumbers = [];
+
+for (const n of numbers){
+    dubbelNumbers.puch (n*2);
+}
+console.log ("#22.", numbers);
+console.log ("#22.", dubbelNumbers);
+
+// #29.
+const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+
+for (const word of words) {
+    const numberOfCharacters = word.length;
+    console.log (`#29. word: ${w}. Den har ${numberOfCharacters} ord.`);
+}
