@@ -118,8 +118,6 @@ console.log (partOfPlayersEnd); */
 
 
 
-
-
 // 20. Använd en for-loop för att summera alla tal i arrayen numbers ovan. 
 //Logga ut summan efter att loopen har körts klart.
 
@@ -196,19 +194,183 @@ console.log (partOfPlayersEnd); */
 // 25. Skapa en ny array som heter positiveNumbers och fyll den med endast de positiva 
 //talen från arrayen nedan. Använd en for-loop och en if-sats.
 
-const mixedNumbers = [3, -5, 12, -1, 8, -6];
-const evenNumbers = 
+// const mixedNumbers = [3, -5, 12, -1, 8, -6];
+// const positiveNumbers = [];
+// 
+// for (let i = 0; i < mixedNumbers.length; i++){
+    // if (mixedNumbers[i] > 0) {
+    // positiveNumbers.push(mixedNumbers[i]); 
+    // return
+    // }
+// } 
+//console.log = (positiveNumbers[i]);
 
-for (let i = 0; i < mixedNumbers; i++){
-    if (){
-        
-    }
-}
+//26. Utgå från arrayen mixedNumbers nedan. Skriv en for-loop utan att använda index, 
+//där du loggar varje positivt tal.
 
-// // #29.
+// const mixedNumbers = [3, -5, 12, -1, 8, -6];
+
+// for (const number of mixedNumbers){
+//     if (number > 0)
+
+//         console.log(number);
+// }
+
+
+
+// 27. Använd en while-loop för att logga alla tal i arrayen numbers från och med index 0. 
+// Avbryt loopen om talet är större än 10.
+
+// const numbers = [5, 8, 12, 20, 3];
+// let index = 0;
+
+// while (index < numbers.length){
+//     const number = numbers[index];
+
+//     if (number > 10) {
+//         break;
+//     } 
+
+//     console.log(number);
+//     index++;
+// }
+
+
+// 28. Utgå från arrayen mixedNumbers ovan. Använd en while-loop för att räkna 
+// hur många negativa tal det finns i arrayen. Logga antalet.
+
+// const mixedNumbers = [3, -5, 12, -1, 8, -6];
+// let index = 0;
+
+// while (index < mixedNumbers.length){
+//     const negativeNumber = mixedNumbers[index];
+
+//     if (negativeNumber > 0){
+//       index++;
+//     }
+//     console.log (negativeNumber.length);
+//     index++;
+// }
+
+
+
+
+// 29. Skapa en array words med några ord i den, (exempel nedan). Använd en for-loop 
+// för att logga varje ord tillsammans med dess längd (antal bokstäver).
+
 // const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
 
 // for (const word of words) {
+
 //     const numberOfCharacters = word.length;
-//     console.log (`#29. word: ${w}. Den har ${numberOfCharacters} ord.`);
+
+//     console.log (`Ord: ${word}. Den har ${numberOfCharacters} bokstäver.`);
 // }
+
+
+// 30. Använd words-arrayen ovan och en for-loop för att bygga en ny sträng som består 
+// av de första bokstäverna i varje ord. Logga ut den nya strängen.
+
+// const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+// let character = "";
+
+// for (let i = 0; i < words.length; i++){
+
+//     (character += words [i][0]);
+// }
+
+// console.log (character);
+
+// 31. Skriv en while-loop som itererar genom arrayen numbers och loggar varje tal 
+// tills summan av de loggade talen överstiger 25.
+
+
+// const numbers = [5, 8, 12, 20, 3];
+// let total = 0; 
+// let index = 0; 
+
+// while (index < numbers.length) {
+//     total += numbers[index]; 
+//     console.log([total]); 
+//     index++; 
+    
+// if (total >= 25){
+//     break;
+// }
+// }
+
+
+// 32. Använd en for-loop utan index för att summera alla värden i arrayen mixedNumbers. 
+// Logga ut summan.
+
+// const mixedNumbers = [3, -5, 12, -1, 8, -6];
+// let total = 0;
+
+// for (const addednumber of mixedNumbers){
+//       total += addednumber;
+
+// }
+// console.log (`Summan blir: ${total}!`);
+
+
+// 33. Skapa en array temperatures (exempel nedan) med några temperaturer i Celsius. 
+// Använd en for-loop för att hitta den högsta temperaturen. Därefter, logga både högsta 
+// temperaturen och dess index i arrayen.
+
+// const temperatures = [15, 22, 19, 30, 28, 18, 25];
+
+// let highestTemperature = temperatures [0];
+
+// let highestTemperatureIndex = 0;
+
+
+// for (let i = 1; i < temperatures.length; i++) {
+//     const temperature = temperatures [i];
+
+//     if (temperature > highestTemperature){
+//         highestTemperature = temperature;
+//         highestTemperatureIndex = i;
+//     }
+
+// }
+//     console.log (`Den högsta temperaturen är:${highestTemperature} 
+//     och den ligger på indexposition ${highestTemperatureIndex}`);
+
+
+// 
+// 34. 
+// Använd en for-loop för att räkna antalet ord i words-arrayen som innehåller fler än 
+// fem bokstäver.
+
+// const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+// let wordsBiggerThan5 = 0;
+
+
+// for (let i = 0 ; i < words.length; i++){
+    
+//     if (words[i].length > 5){
+//        wordsBiggerThan5++
+//     }
+// }
+
+// console.log (wordsBiggerThan5);
+
+
+// 35. Skriv en while-loop som räknar upp talen från numbers-arrayen ovan tills ett udda 
+// tal hittas. Avbryt loopen vid första udda talet och logga resultatet.
+
+const numbers = [5, 8, 12, 20, 3];
+let index = 0;
+
+while (index < numbers.length ){
+    const unevenNumber = numbers [index];
+
+    if (unevenNumber % 2 !==0){
+
+        console.log(`Det första udda talet är: ${unevenNumber}`);
+
+        break;
+    }
+
+    index++;
+}
