@@ -78,10 +78,10 @@ console.log(players.indexOf("Maradona"));
 //oavsett var i listan han befinner sig.
 
 //const players = ["Zlatan", "Beckham", "Zidane", "Ronaldo", "Romario", "Maradona"];
-/* const removeRonaldo = (players.indexOf("Ronaldo"));
+/* const indexOfRonaldo = (players.indexOf("Ronaldo"));
 
-if (removeRonaldo !== -1){
-    players.splice(removeRonaldo,1);
+if (indexOfRonaldo >= 0){
+    players.splice(indexOfRonaldo,1);
 }
 
 console.log(players); */
@@ -281,23 +281,33 @@ console.log (partOfPlayersEnd); */
 
 // console.log (character);
 
+// for (const word of words){
+//     character += word[0];
+// }
+
+// console.log(character);
+
 // 31. Skriv en while-loop som itererar genom arrayen numbers och loggar varje tal 
 // tills summan av de loggade talen överstiger 25.
 
 
 // const numbers = [5, 8, 12, 20, 3];
-// let total = 0; 
+//  let sum = 0; 
 // let index = 0; 
 
-// while (index < numbers.length) {
-//     total += numbers[index]; 
-//     console.log([total]); 
+//  while (sum < 25) {
+
+// const number = numbers[index];
+// console.log(number);
+//      sum += number; 
+//      console.log(number); 
 //     index++; 
     
-// if (total >= 25){
-//     break;
-// }
-// }
+//  }
+//  console.log( "Summan är inte längre mindre än 25: " + sum);
+
+
+
 
 
 // 32. Använd en for-loop utan index för att summera alla värden i arrayen mixedNumbers. 
@@ -359,18 +369,18 @@ console.log (partOfPlayersEnd); */
 // 35. Skriv en while-loop som räknar upp talen från numbers-arrayen ovan tills ett udda 
 // tal hittas. Avbryt loopen vid första udda talet och logga resultatet.
 
-const numbers = [5, 8, 12, 20, 3];
-let index = 0;
+// const numbers = [5, 8, 12, 20, 3];
+// let index = 0;
 
-while (index < numbers.length ){
-    const unevenNumber = numbers [index];
+// while (index < numbers.length ){
+//     const unevenNumber = numbers [index];
 
-    if (unevenNumber % 2 !==0){
+//     if (unevenNumber % 2 !==0){
 
-        console.log(`Det första udda talet är: ${unevenNumber}`);
+//         console.log(`Det första udda talet är: ${unevenNumber}`);
 
-        break;
-    }
+//         break;
+//     }
 
-    index++;
-}
+//     index++;
+// }
